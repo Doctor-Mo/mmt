@@ -33,8 +33,9 @@ class ProposalMailerPreview < ActionMailer::Preview
         Eget gravida cum sociis natoque penatibus et. Blandit turpis cursus in hac habitasse platea dictumst quisque. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Convallis a cras semper auctor neque. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. At in tellus integer feugiat scelerisque varius morbi enim nunc. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Malesuada fames ac turpis egestas sed. Nunc scelerisque viverra mauris in aliquam sem fringilla. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Mauris sit amet massa vitae tortor. Vitae et leo duis ut diam. Donec ac odio tempor orci dapibus ultrices in iaculis. Amet consectetur adipiscing elit duis tristique sollicitudin. Magna eget est lorem ipsum dolor.'
       }
 
-    id = 1
+    proposal.request_type = 'create'
+    proposal.id = 1
 
-    ProposalMailer.proposal_rejected_notification(user, proposal, id)
+    ProposalMailer.proposal_rejected_notification(user, proposal)
   end
 end
